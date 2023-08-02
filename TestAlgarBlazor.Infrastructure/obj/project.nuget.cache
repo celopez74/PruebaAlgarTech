@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "aslG5B+cR+KJgr4JyY1KAfi9P3AKujF5EFQGOmnonQKRyMaJPL3Egda8qc/SHGAu/leN7vPDwwt3Gh3F/Ck/qQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\celop\\source\\repos\\TestAlgarBlazor\\TestAlgarBlazor.Infrastructure\\TestAlgarBlazor.Infrastructure.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\celop\\.nuget\\packages\\microsoft.extensions.configuration\\7.0.0\\microsoft.extensions.configuration.7.0.0.nupkg.sha512",
+    "C:\\Users\\celop\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\7.0.0\\microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\celop\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\7.0.0\\microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "C:\\Users\\celop\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\celop\\.nuget\\packages\\microsoft.extensions.primitives\\7.0.0\\microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "C:\\Users\\celop\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,1 @@
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor\obj\Release\net6.0\TestAlgarBlazor.csproj.AssemblyReference.cache

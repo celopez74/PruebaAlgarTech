@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TestAlgarBlazor.DataAccess\TestAlgarBlazor.DataAccess.csproj" />
+    <ProjectReference Include="..\TestAlgarBlazor.Infrastructure\TestAlgarBlazor.Infrastructure.csproj" />
+    <ProjectReference Include="..\TestAlgarBlazor.Model\TestAlgarBlazor.Model.csproj" />
+  </ItemGroup>
+
+</Project>

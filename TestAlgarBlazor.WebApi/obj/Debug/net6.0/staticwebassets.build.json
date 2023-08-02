@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "6lHteHmlsNgsrJX5uI+aLljKfBOG8vOCXCuuwbBYyrQ=",
+  "Source": "TestAlgarBlazor.WebApi",
+  "BasePath": "_content/TestAlgarBlazor.WebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

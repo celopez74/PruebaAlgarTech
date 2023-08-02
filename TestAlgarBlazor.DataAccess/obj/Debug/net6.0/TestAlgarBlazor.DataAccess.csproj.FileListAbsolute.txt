@@ -1,0 +1,15 @@
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\bin\Debug\net6.0\TestAlgarBlazor.DataAccess.deps.json
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\bin\Debug\net6.0\TestAlgarBlazor.DataAccess.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\bin\Debug\net6.0\TestAlgarBlazor.DataAccess.pdb
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\bin\Debug\net6.0\TestAlgarBlazor.Model.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\bin\Debug\net6.0\TestAlgarBlazor.Model.pdb
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.csproj.AssemblyReference.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.AssemblyInfoInputs.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.AssemblyInfo.cs
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.csproj.CoreCompileInputs.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.csproj.CopyComplete
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\refint\TestAlgarBlazor.DataAccess.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\TestAlgarBlazor.DataAccess.pdb
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.DataAccess\obj\Debug\net6.0\ref\TestAlgarBlazor.DataAccess.dll

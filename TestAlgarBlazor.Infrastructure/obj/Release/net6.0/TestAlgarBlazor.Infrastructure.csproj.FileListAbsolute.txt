@@ -1,0 +1,12 @@
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\bin\Release\net6.0\TestAlgarBlazor.Infrastructure.deps.json
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\bin\Release\net6.0\TestAlgarBlazor.Infrastructure.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\bin\Release\net6.0\TestAlgarBlazor.Infrastructure.pdb
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.AssemblyInfo.cs
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\refint\TestAlgarBlazor.Infrastructure.dll
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\TestAlgarBlazor.Infrastructure.pdb
+C:\Users\celop\source\repos\TestAlgarBlazor\TestAlgarBlazor.Infrastructure\obj\Release\net6.0\ref\TestAlgarBlazor.Infrastructure.dll

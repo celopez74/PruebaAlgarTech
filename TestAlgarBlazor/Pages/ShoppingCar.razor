@@ -1,0 +1,158 @@
+﻿@page "/shoppingcar"
+@using System.Text.Json;
+@using TestAlgarBlazor.Model;
+@using TestAlgarBlazor.BusinessLogic.ApplicationServices;
+@using Newtonsoft.Json;
+
+@inject IProductApplicationService ProductApplicationService
+@inject IPurchaseApplicationService PurchaseApplicationService
+@inject IJSRuntime JS
+
+<PageTitle>Shopping Car</PageTitle>
+
+<h1>Shopping Car</h1>
+
+
+@if (productList == null)
+{
+    <p>Loading ...</p>
+}
+else
+{
+    <table>
+        <tr>
+            <td style="width:70%">
+                <div>
+                    <table id="tableProductList" class="table">
+                        <tbody>
+                            
+                            @foreach (var product in productList)
+                            {
+                                rowNumb = rowNumb + 1;
+                                <tr>
+                                    <td width="20%">
+                                        <img src="@product.urlImage" width="250" height="180">
+                                    </td>
+                                    <td width="80%">
+                                        <div>
+                                            <p style="text-decoration: blink">Ref  # @product.ProductReference</p>
+                                            <p><h3>@product.ProductName</h3></p>
+                                            <p style="text-decoration: blink">@product.ProductDescription</p>
+                                            <b>Precio unitario:  </b>
+                                            <span class="bi bi-currency-exchange">
+                                                <b>@string.Format(" {0:0.00}", product.productPrice)</b>
+                                                <input id="productId_@rowNumb" type="hidden" value="@product.ProductId" />
+                                                <input id="price_@rowNumb" type="hidden" value="@product.productPrice" />
+                                                 <br>Selecciona la cantidad que quieres pedir:
+                                                <input id="qt_@rowNumb" type="number" width="2" min="0" max="999" value="0" onchange="onChangeQuantity('button_@product.ProductId')" />
+                                                
+                                            </span>
+                                            <div class="divsubtotalcard">
+                                                SubTotal Producto:&nbsp;&nbsp;&nbsp;
+                                                <span class="bi bi-currency-exchange">
+                                                    <input id="subTotal_@rowNumb" class="subtotalcard" readonly type="text" value="0" />
+                                                    </span>
+                                                <input id="button_@rowNumb" type="button" value="Agregar" onclick="addToCar()" />
+                                            </div>
+                                        </div>
+
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </td>
+            <td style="width:30%; vertical-align:top" >
+                <div class="divSummary">
+                    <h2>Resumen de la compra</h2>
+
+                    <h4>Total articulos: <label id="TotalItems"> 0 </label></h4>
+                    <h3>Total:  <span class="bi bi-currency-exchange">      <label id="TotalCompra"> 0 </label></span></h3>
+                    <table>
+                        <tr>
+                            <td style="width:35%">
+                                <p><b>Danos tu nombre: </b>  </p>
+                            </td>
+                            <td style="width:65%">
+                                <input type="text" id="txt_customerName">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="width:35%">
+                                <p><b>Y tu dirección: </b>  </p>
+                            </td>
+                            <td style="width:65%">
+                                <input type="text" id="txt_customerAdress">
+                            </td>
+                        </tr>   
+                    </table>
+                    <div id="divButtonConfirm" style="display:none">
+                        <input id="button_confirm" type="button" value="Confirmar Compra" @onclick="CallPurchaseAppService" />
+                     </div>
+                    
+                </div>
+                <br>
+                <div id="alert1" style="display:none" class="alert alert-success alert-dismissible">
+                    <strong>Success!</strong> <p id="alert1msg"></p>.
+                </div>
+                <div id="alert2" style="display:none" class="alert alert-danger alert-dismissible">
+                    <strong>Danger!</strong> <p id="alert2msg"></p>.
+                </div>
+            </td>
+        </tr>
+    </table>   
+    
+}
+
+
+@code {
+
+    List<Product> productList = new List<Product>();
+
+    int rowNumb = 0;
+
+    protected override Task OnInitializedAsync()
+    {
+
+        try
+        {
+            productList = ProductApplicationService.GetAllProducts();
+
+
+
+        } catch (Exception)
+        {
+            throw;
+        }
+
+
+        return base.OnInitializedAsync();
+    }
+
+
+    private async Task CallPurchaseAppService()
+    {
+        rowNumb = 0;
+        var text = await JS.InvokeAsync<string>("buysconfirm",null);
+        if (text != null)
+        {
+            string customerName = text.Split('|')[0];
+            string customeraddress = text.Split('|')[1];
+            int purchaseID = PurchaseApplicationService.InsertPurchase(customerName, customeraddress);
+            var JSonDetails = await JS.InvokeAsync<string>("getDetailsInformation", null);
+            //deserializar json
+            List<PurchaseDetails> PurchaseDetailsList = new List<PurchaseDetails>();
+            PurchaseDetailsList = JsonConvert.DeserializeObject<List<PurchaseDetails>>(JSonDetails);
+
+            foreach (PurchaseDetails det in PurchaseDetailsList)
+            {
+                det.purchaseId = purchaseID;
+                PurchaseApplicationService.InsertPurchaseDetails(det);
+            }
+            var text2 = await JS.InvokeAsync<string>("succesful", purchaseID);
+        }       
+       
+
+    }
+}
