@@ -3,7 +3,7 @@
 
 ## 1. Creacion de base de datos
 Para la Creación de la base de datos se debe ejecutar desde el SQLserver Management Studio el Script que se encuentra en la ruta:  /DatabaseScript/AlgarTestScript.sql  de este repositorio.
-Se debe tener en cuenta que el lmdf y .ldf de base de datos se intentarán crear en la ruta C:\MSSQL\DATA, la cual debe existir en el sistem operativo.
+Se debe tener en cuenta que los archivos .mdf y .ldf de base de datos se intentarán crear en la ruta C:\MSSQL\DATA, la cual debe existir en el sistem operativo.
 
 ## 2. Agregar Cadenas de Conexion
 Una vez creada la base de datos, se debe generar el conexion string correspondiente y reemplazarlo por los existentes en los archivos \TestAlgarBlazor\TestAlgarBlazor\appsettings.json y \TestAlgarBlazor\TestAlgarBlazor.WebApi\appsettings.json
